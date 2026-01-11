@@ -143,8 +143,20 @@ function parseColorStr(colorStr) {
   return { valid: false };
 }
 
-function updateCustomColorGroup(groupIndex, groupNum) {
+function updateCustomColorGroup(groupIndex, properties, groupNum) {
   if (!FireworkLib || !FireworkLib.setCustomColorGroup || !FireworkLib.Color) return;
+  
+  // 从 properties 中更新全局变量
+  let updated = false;
+  for (let i = 1; i <= 6; i++) {
+    const propName = `custom_color_${groupNum}_${i}`;
+    if (properties[propName]) {
+      eval(`custom_color_${groupNum}_${i} = properties[propName].value;`);
+      updated = true;
+    }
+  }
+  
+  if (!updated) return;
   
   // 构建颜色数组
   const colorArray = [];
@@ -161,113 +173,8 @@ function updateCustomColorGroup(groupIndex, groupNum) {
   }
 }
 
-//====== Initialization Logic =====
-// 初始化所有参数到 FireworkLib
-function initializeFireworkLibParams() {
-  if (!FireworkLib) return false;
-  
-  try {
-    // 初始化物理参数
-    if (FireworkLib.Physics) {
-      FireworkLib.Physics.BASE_GRAVITY = gravity;
-      FireworkLib.Physics.BASE_DRAG = drag;
-      FireworkLib.Physics.LIFETIME_OFFSET = lifetime_offset;
-    }
-    
-    // 初始化 Classic 烟花参数
-    if (FireworkLib.ClassicParams) {
-      FireworkLib.ClassicParams.speed = classic_speed;
-      FireworkLib.ClassicParams.count = classic_count;
-      FireworkLib.ClassicParams.lifetime = classic_lifetime;
-      FireworkLib.ClassicParams.withLaunch = classic_withlaunch;
-      FireworkLib.ClassicParams.launchRatio = classic_launch_ratio;
-      FireworkLib.ClassicParams.speedVariance = classic_speed_variance;
-    }
-    
-    // 初始化 Fountain 烟花参数
-    if (FireworkLib.FountainParams) {
-      FireworkLib.FountainParams.fanAngle = fountain_fan_angle;
-      FireworkLib.FountainParams.count = fountain_count;
-      FireworkLib.FountainParams.speed = fountain_speed;
-      FireworkLib.FountainParams.speedVariance = fountain_speed_variance;
-      FireworkLib.FountainParams.lifetime = fountain_lifetime;
-    }
-    
-    // 初始化 Vortex 烟花参数
-    if (FireworkLib.VortexParams) {
-      FireworkLib.VortexParams.size = vortex_size;
-    }
-    
-    // 初始化 FountainArray 烟花参数
-    if (FireworkLib.FountainArrayParams) {
-      FireworkLib.FountainArrayParams.speed = fountainarray_speed;
-      FireworkLib.FountainArrayParams.lifetime = fountainarray_lifetime;
-      FireworkLib.FountainArrayParams.speedVariance = fountainarray_speed_variance;
-      FireworkLib.FountainArrayParams.arrayCount = fountainarray_array_count;
-      FireworkLib.FountainArrayParams.particlePerArray = fountainarray_particle_per_array;
-      FireworkLib.FountainArrayParams.angleRange = fountainarray_angle_range;
-    }
-    
-    // 初始化 CrossFire 烟花参数
-    if (FireworkLib.CrossFireParams) {
-      FireworkLib.CrossFireParams.posOffset = crossfire_pos_offset;
-      FireworkLib.CrossFireParams.angleDirection = crossfire_angle_direction;
-      FireworkLib.CrossFireParams.angleRange = crossfire_angle_range;
-      FireworkLib.CrossFireParams.count = crossfire_count;
-      FireworkLib.CrossFireParams.speed = crossfire_speed;
-      FireworkLib.CrossFireParams.speedVariance = crossfire_speed_variance;
-      FireworkLib.CrossFireParams.lifetime = crossfire_lifetime;
-    }
-    
-    // 初始化 GrandFinale 烟花参数
-    if (FireworkLib.GrandFinaleParams) {
-      FireworkLib.GrandFinaleParams.count1 = grandfinale_count1;
-      FireworkLib.GrandFinaleParams.speed1 = grandfinale_speed1;
-      FireworkLib.GrandFinaleParams.count2 = grandfinale_count2;
-      FireworkLib.GrandFinaleParams.speed2 = grandfinale_speed2;
-      FireworkLib.GrandFinaleParams.count3 = grandfinale_count3;
-      FireworkLib.GrandFinaleParams.speed3 = grandfinale_speed3;
-      FireworkLib.GrandFinaleParams.ringRadius = grandfinale_ring_radius;
-      FireworkLib.GrandFinaleParams.lifetime = grandfinale_lifetime;
-    }
-    
-    return true;
-  } catch (err) {
-    console.error('初始化 FireworkLib 参数失败:', err);
-    return false;
-  }
-}
-
-// 初始化颜色参数
-function initializeColorParams() {
-  if (!FireworkLib || !FireworkLib.colorAvailability) return false;
-  
-  try {
-    const fireworkTypes = ['classic', 'classicLaunch', 'fountain', 'vortex', 'fountainArray', 'crossFire', 'grandFinale'];
-    const colorArrays = {
-      classic: classic_colors,
-      classicLaunch: classic_colors,
-      fountain: fountain_colors,
-      vortex: vortex_colors,
-      fountainArray: fountainarray_colors,
-      crossFire: crossfire_colors,
-      grandFinale: grandfinale_colors
-    };
-
-    for (const fireworkType of fireworkTypes) {
-      if (colorArrays[fireworkType] && FireworkLib.colorAvailability[fireworkType]) {
-        for (let i = 0; i <= 10; i++) {
-          FireworkLib.colorAvailability[fireworkType][i] = colorArrays[fireworkType][i];
-        }
-      }
-    }
-    
-    return true;
-  } catch (err) {
-    console.error('初始化颜色参数失败:', err);
-    return false;
-  }
-}
+//====== Wallpaper Engine bindings =====
+// wallpaper.js 已处理所有属性更新逻辑
 
 //====== HiDPI canvas helpers =====
 const PIXEL_RATIO = (function () {
@@ -439,6 +346,7 @@ function run() {
   }
 }
 
+// 初始化自定义颜色组 - 在运行前设置
 function initCustomColorGroup(groupIndex, groupNum) {
   if (!FireworkLib || !FireworkLib.setCustomColorGroup || !FireworkLib.Color) return false;
   
@@ -470,6 +378,32 @@ function initializeCustomColors() {
     if (initCustomColorGroup(1, 2)) console.log(`✓ 自定义颜色组 2 初始化成功`);
     if (initCustomColorGroup(2, 3)) console.log(`✓ 自定义颜色组 3 初始化成功`);
 
+    // 初始化所有烟花类型的颜色可用性 - 基于项目配置
+    if (FireworkLib && FireworkLib.colorAvailability) {
+      console.log('初始化颜色可用性...');
+      // 从 classic_colors, fountain_colors 等数组初始化
+      const fireworkTypes = ['classic', 'classicLaunch', 'fountain', 'vortex', 'fountainArray', 'crossFire', 'grandFinale'];
+      const colorArrays = {
+        classic: classic_colors,
+        classicLaunch: classic_colors,
+        fountain: fountain_colors,
+        vortex: vortex_colors,
+        fountainArray: fountainarray_colors,
+        crossFire: crossfire_colors,
+        grandFinale: grandfinale_colors
+      };
+
+      for (const fireworkType of fireworkTypes) {
+        if (colorArrays[fireworkType]) {
+          for (let i = 0; i <= 10; i++) {
+            if (FireworkLib.colorAvailability[fireworkType]) {
+              FireworkLib.colorAvailability[fireworkType][i] = colorArrays[fireworkType][i];
+            }
+          }
+        }
+      }
+    }
+
     console.log('✓ 颜色初始化完成');
     return true;
   } catch (err) {
@@ -478,29 +412,23 @@ function initializeCustomColors() {
   }
 }
 
-// 尝试初始化自定义颜色和参数
+// 尝试初始化自定义颜色
 let initAttempts = 0;
 const maxAttempts = 20;
 const initTimer = setInterval(() => {
-  const customColorsReady = initializeCustomColors();
-  const paramsReady = initializeFireworkLibParams();
-  const colorParamsReady = initializeColorParams();
-  
-  if (customColorsReady && paramsReady && colorParamsReady) {
+  if (initializeCustomColors()) {
     clearInterval(initTimer);
-    console.log('✓ 全部初始化成功');
+    console.log('✓ 自定义颜色初始化成功');
   } else if (++initAttempts >= maxAttempts) {
-    console.error('✗ 初始化最终失败');
+    console.error('✗ 初始化自定义颜色最终失败');
     clearInterval(initTimer);
   }
 }, 50);
 
-// 也在 run 之后再尝试一次初始化（确保 FireworkLib 已完全加载）
+// 也在 run 之后再尝试一次初始化（确保 ColorLib 已完全加载）
 setTimeout(() => {
   if (initAttempts < maxAttempts) {
     initializeCustomColors();
-    initializeFireworkLibParams();
-    initializeColorParams();
   }
 }, 500);
 
