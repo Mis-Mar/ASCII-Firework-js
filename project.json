@@ -1,0 +1,1857 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Have a nice day! It's based on https://github.com/Wayoung7/firework-rs\n",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"general_group" :
+			{
+				"index" : 100,
+				"order" : 100,
+				"text" : "General",
+				"type" : "group",
+				"value" : true
+			},
+			"gravity" :
+			{
+				"fraction" : true,
+				"index" : 102,
+				"max" : 100,
+				"min" : 0.1,
+				"order" : 102,
+				"precision" : 1,
+				"step" : 0.5,
+				"text" : "Gravity",
+				"type" : "slider",
+				"value" : 7.5
+			},
+			"drag" :
+			{
+				"fraction" : true,
+				"index" : 103,
+				"max" : 0.5,
+				"min" : 0,
+				"order" : 103,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Drag Coefficient",
+				"type" : "slider",
+				"value" : 0.18
+			},
+			"fps" : 
+			{
+				"fraction" : false,
+				"index" : 104,
+				"max" : 60,
+				"min" : 20,
+				"order" : 104,
+				"text" : "FPS",
+				"type" : "slider",
+				"value" : 30
+			},
+			"font_size" : 
+			{
+				"fraction" : false,
+				"index" : 105,
+				"max" : 20,
+				"min" : 3,
+				"order" : 105,
+				"text" : "Font Size",
+				"type" : "slider",
+				"value" : 6
+			},
+			"lifetime_offset" :
+			{
+				"fraction" : true,
+				"index" : 106,
+				"max" : 1,
+				"min" : 0,
+				"order" : 106,
+				"precision" : 2,
+				"step" : 0.05,
+				"text" : "Lifetime Variance",
+				"type" : "slider",
+				"value" : 0.3
+			},
+			"background_color" :
+			{
+				"index" : 106.5,
+				"order" : 106.5,
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"button_offset" :
+			{
+				"fraction" : false,
+				"index" : 106.6,
+				"max" : 10,
+				"min" : 0,
+				"order" : 106.6,
+				"step" : 1,
+				"text" : "Bottom Offset",
+				"type" : "slider",
+				"value" : 4
+			},
+			"schemecolor" : 
+			{
+				"index" : 107,
+				"order" : 107,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"custom_colors_group" :
+			{
+				"index" : 140,
+				"order" : 140,
+				"text" : "Custom Colors",
+				"type" : "group",
+				"value" : false
+			},
+			"custom_group_1_separator" :
+			{
+				"index" : 150,
+				"order" : 150,
+				"text" : "<hr><h4>Group 1</h4>",
+				"type" : "text"
+			},
+			"custom_color_1_1" :
+			{
+				"index" : 151,
+				"order" : 151,
+				"text" : "Group 1 - Color 1",
+				"type" : "color",
+				"value" : "1 0 0"
+			},
+			"custom_color_1_2" :
+			{
+				"index" : 152,
+				"order" : 152,
+				"text" : "Group 1 - Color 2",
+				"type" : "color",
+				"value" : "1 0.33 0.33"
+			},
+			"custom_color_1_3" :
+			{
+				"index" : 153,
+				"order" : 153,
+				"text" : "Group 1 - Color 3",
+				"type" : "color",
+				"value" : "1 0.67 0.67"
+			},
+			"custom_color_1_4" :
+			{
+				"index" : 154,
+				"order" : 154,
+				"text" : "Group 1 - Color 4",
+				"type" : "color",
+				"value" : "0.78 0 0"
+			},
+			"custom_color_1_5" :
+			{
+				"index" : 155,
+				"order" : 155,
+				"text" : "Group 1 - Color 5",
+				"type" : "color",
+				"value" : "0.59 0 0"
+			},
+			"custom_color_1_6" :
+			{
+				"index" : 156,
+				"order" : 156,
+				"text" : "Group 1 - Color 6",
+				"type" : "color",
+				"value" : "1 0.50 0.50"
+			},
+			"custom_group_2_separator" :
+			{
+				"index" : 160,
+				"order" : 160,
+				"text" : "<hr><h4>Group 2</h4>",
+				"type" : "text"
+			},
+			"custom_color_2_1" :
+			{
+				"index" : 161,
+				"order" : 161,
+				"text" : "Group 2 - Color 1",
+				"type" : "color",
+				"value" : "0 1 0"
+			},
+			"custom_color_2_2" :
+			{
+				"index" : 162,
+				"order" : 162,
+				"text" : "Group 2 - Color 2",
+				"type" : "color",
+				"value" : "0.33 1 0.33"
+			},
+			"custom_color_2_3" :
+			{
+				"index" : 163,
+				"order" : 163,
+				"text" : "Group 2 - Color 3",
+				"type" : "color",
+				"value" : "0.67 1 0.67"
+			},
+			"custom_color_2_4" :
+			{
+				"index" : 164,
+				"order" : 164,
+				"text" : "Group 2 - Color 4",
+				"type" : "color",
+				"value" : "0 0.78 0"
+			},
+			"custom_color_2_5" :
+			{
+				"index" : 165,
+				"order" : 165,
+				"text" : "Group 2 - Color 5",
+				"type" : "color",
+				"value" : "0 0.59 0"
+			},
+			"custom_color_2_6" :
+			{
+				"index" : 166,
+				"order" : 166,
+				"text" : "Group 2 - Color 6",
+				"type" : "color",
+				"value" : "0.50 1 0.50"
+			},
+			"custom_group_3_separator" :
+			{
+				"index" : 170,
+				"order" : 170,
+				"text" : "<hr><h4>Group 3</h4>",
+				"type" : "text"
+			},
+			"custom_color_3_1" :
+			{
+				"index" : 171,
+				"order" : 171,
+				"text" : "Group 3 - Color 1",
+				"type" : "color",
+				"value" : "0 0 1"
+			},
+			"custom_color_3_2" :
+			{
+				"index" : 172,
+				"order" : 172,
+				"text" : "Group 3 - Color 2",
+				"type" : "color",
+				"value" : "0.33 0.33 1"
+			},
+			"custom_color_3_3" :
+			{
+				"index" : 173,
+				"order" : 173,
+				"text" : "Group 3 - Color 3",
+				"type" : "color",
+				"value" : "0.67 0.67 1"
+			},
+			"custom_color_3_4" :
+			{
+				"index" : 174,
+				"order" : 174,
+				"text" : "Group 3 - Color 4",
+				"type" : "color",
+				"value" : "0 0 0.78"
+			},
+			"custom_color_3_5" :
+			{
+				"index" : 175,
+				"order" : 175,
+				"text" : "Group 3 - Color 5",
+				"type" : "color",
+				"value" : "0 0 0.59"
+			},
+			"custom_color_3_6" :
+			{
+				"index" : 176,
+				"order" : 176,
+				"text" : "Group 3 - Color 6",
+				"type" : "color",
+				"value" : "0.50 0.50 1"
+			},
+			"classic_group" :
+			{
+				"index" : 200,
+				"order" : 200,
+				"text" : "Classic",
+				"type" : "group",
+				"value" : true
+			},
+			"classic_enable" :
+			{
+				"index" : 200.4,
+				"order" : 200.4,
+				"text" : "Enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_frequent_separator" :
+			{
+				"index" : 200.5,
+				"order" : 200.5,
+				"text" : "<hr><h4>Frequency</h4>",
+				"type" : "text"
+			},
+			"classic_interval" :
+			{
+				"fraction" : false,
+				"index" : 200.6,
+				"max" : 3000,
+				"min" : 50,
+				"step" : 50,
+				"order" : 200.6,
+				"text" : "Interval (ms)",
+				"type" : "slider",
+				"value" : 250
+			},
+			"classic_duration_ms" :
+			{
+				"fraction" : false,
+				"index" : 200.7,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 200.7,
+				"text" : "Duration (ms)",
+				"type" : "slider",
+				"value" : 1000
+			},
+			"classic_duration_s" :
+			{
+				"fraction" : false,
+				"index" : 200.8,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 200.8,
+				"text" : "Duration (s)",
+				"type" : "slider",
+				"value" : 9
+			},
+			"classic_rest_ms" :
+			{
+				"fraction" : false,
+				"index" : 200.9,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 200.9,
+				"text" : "Rest (ms)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"classic_rest_s" :
+			{
+				"fraction" : false,
+				"index" : 201.0,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 201.0,
+				"text" : "Rest (s)",
+				"type" : "slider",
+				"value" : 40
+			},
+			"classic_first_wait" :
+			{
+				"fraction" : false,
+				"index" : 201.1,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 201.1,
+				"text" : "First Wait (s)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"classic_advanced_separator" :
+			{
+				"index" : 201.2,
+				"order" : 201.2,
+				"text" : "<hr><h4>Advanced</h4>",
+				"type" : "text"
+			},
+			"classic_speed" :
+			{
+				"fraction" : false,
+				"index" : 202,
+				"max" : 600,
+				"min" : 10,
+				"order" : 202,
+				"text" : "Explosion Speed",
+				"type" : "slider",
+				"value" : 250
+			},
+			"classic_count" :
+			{
+				"fraction" : false,
+				"index" : 203,
+				"max" : 100,
+				"min" : 10,
+				"order" : 203,
+				"text" : "Particle Count",
+				"type" : "slider",
+				"value" : 28
+			},
+			"classic_lifetime" :
+			{
+				"fraction" : false,
+				"index" : 204,
+				"max" : 5000,
+				"min" : 500,
+				"order" : 204,
+				"text" : "Lifetime (ms)",
+				"type" : "slider",
+				"value" : 3000
+			},
+			"classic_withlaunch" :
+			{
+				"index" : 205,
+				"order" : 205,
+				"text" : "With Launch",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_launch_ratio" :
+			{
+				"fraction" : true,
+				"index" : 206,
+				"max" : 0.9,
+				"min" : 0.1,
+				"order" : 206,
+				"precision" : 2,
+				"step" : 0.05,
+				"text" : "Launch Ratio",
+				"type" : "slider",
+				"value" : 0.85,
+				"condition" : "classic_withlaunch.value == true"
+			},
+			"classic_speed_variance" :
+			{
+				"fraction" : true,
+				"index" : 206.5,
+				"max" : 1,
+				"min" : 0,
+				"order" : 206.5,
+				"precision" : 2,
+				"step" : 0.05,
+				"text" : "Speed Variance",
+				"type" : "slider",
+				"value" : 0.85
+			},
+			"classic_colors_separator" :
+			{
+				"index" : 207,
+				"order" : 207,
+				"text" : "<hr><h4>Color Groups</h4>",
+				"type" : "text"
+			},
+			"classic_color_0" :
+			{
+				"index" : 208,
+				"order" : 208,
+				"text" : "Pink Purple",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_color_1" :
+			{
+				"index" : 209,
+				"order" : 209,
+				"text" : "Blue Gray",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_color_2" :
+			{
+				"index" : 210,
+				"order" : 210,
+				"text" : "Pink Blue",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_color_3" :
+			{
+				"index" : 211,
+				"order" : 211,
+				"text" : "Red Darkred",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_color_4" :
+			{
+				"index" : 212,
+				"order" : 212,
+				"text" : "Blue Gold",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_color_5" :
+			{
+				"index" : 213,
+				"order" : 213,
+				"text" : "Yellow Green",
+				"type" : "bool",
+				"value" : true
+			},
+			"classic_color_6" :
+			{
+				"index" : 214,
+				"order" : 214,
+				"text" : "Cyan Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"classic_color_7" :
+			{
+				"index" : 215,
+				"order" : 215,
+				"text" : "Orange Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"classic_color_8" :
+			{
+				"index" : 216,
+				"order" : 216,
+				"text" : "Custom Color 1",
+				"type" : "bool",
+				"value" : false
+			},
+			"classic_color_9" :
+			{
+				"index" : 217,
+				"order" : 217,
+				"text" : "Custom Color 2",
+				"type" : "bool",
+				"value" : false
+			},
+			"classic_color_10" :
+			{
+				"index" : 218,
+				"order" : 218,
+				"text" : "Custom Color 3",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_group" :
+			{
+				"index" : 300,
+				"order" : 300,
+				"text" : "Fountain",
+				"type" : "group",
+				"value" : true
+			},
+			"fountain_enable" :
+			{
+				"index" : 300.4,
+				"order" : 300.4,
+				"text" : "Enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"fountain_frequent_separator" :
+			{
+				"index" : 300.5,
+				"order" : 300.5,
+				"text" : "<hr><h4>Frequency</h4>",
+				"type" : "text"
+			},
+			"fountain_interval" :
+			{
+				"fraction" : false,
+				"index" : 300.6,
+				"max" : 3000,
+				"min" : 50,
+				"step" : 50,
+				"order" : 300.6,
+				"text" : "Interval (ms)",
+				"type" : "slider",
+				"value" : 50
+			},
+			"fountain_duration_ms" :
+			{
+				"fraction" : false,
+				"index" : 300.7,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 300.7,
+				"text" : "Duration (ms)",
+				"type" : "slider",
+				"value" : 1000
+			},
+			"fountain_duration_s" :
+			{
+				"fraction" : false,
+				"index" : 300.8,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 300.8,
+				"text" : "Duration (s)",
+				"type" : "slider",
+				"value" : 9
+			},
+			"fountain_rest_ms" :
+			{
+				"fraction" : false,
+				"index" : 300.9,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 300.9,
+				"text" : "Rest (ms)",
+				"type" : "slider",
+				"value" : 950
+			},
+			"fountain_rest_s" :
+			{
+				"fraction" : false,
+				"index" : 301.0,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 301.0,
+				"text" : "Rest (s)",
+				"type" : "slider",
+				"value" : 40
+			},
+			"fountain_first_wait" :
+			{
+				"fraction" : false,
+				"index" : 301.1,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 301.1,
+				"text" : "First Wait (s)",
+				"type" : "slider",
+				"value" : 20
+			},
+			"fountain_advanced_separator" :
+			{
+				"index" : 301.2,
+				"order" : 301.2,
+				"text" : "<hr><h4>Advanced</h4>",
+				"type" : "text"
+			},
+			"fountain_fan_angle" :
+			{
+				"fraction" : false,
+				"index" : 302,
+				"max" : 90,
+				"min" : 1,
+				"order" : 302,
+				"text" : "Fan Angle",
+				"type" : "slider",
+				"value" : 10
+			},
+			"fountain_count" :
+			{
+				"fraction" : false,
+				"index" : 303,
+				"max" : 100,
+				"min" : 1,
+				"order" : 303,
+				"text" : "Particle Count",
+				"type" : "slider",
+				"value" : 10
+			},
+			"fountain_speed" :
+			{
+				"fraction" : false,
+				"index" : 304,
+				"max" : 300,
+				"min" : 10,
+				"order" : 304,
+				"text" : "Speed",
+				"type" : "slider",
+				"value" : 72
+			},
+			"fountain_speed_variance" :
+			{
+				"fraction" : true,
+				"index" : 305,
+				"max" : 1,
+				"min" : 0,
+				"order" : 305,
+				"precision" : 2,
+				"step" : 0.05,
+				"text" : "Speed Variance",
+				"type" : "slider",
+				"value" : 1
+			},
+			"fountain_lifetime" :
+			{
+				"fraction" : false,
+				"index" : 306,
+				"max" : 5000,
+				"min" : 500,
+				"order" : 306,
+				"text" : "Lifetime (ms)",
+				"type" : "slider",
+				"value" : 5000
+			},
+			"fountain_colors_separator" :
+			{
+				"index" : 307,
+				"order" : 307,
+				"text" : "<hr><h4>Color Groups</h4>",
+				"type" : "text"
+			},
+			"fountain_color_0" :
+			{
+				"index" : 308,
+				"order" : 308,
+				"text" : "Pink Purple",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_1" :
+			{
+				"index" : 309,
+				"order" : 309,
+				"text" : "Blue Gray",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_2" :
+			{
+				"index" : 310,
+				"order" : 310,
+				"text" : "Pink Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_3" :
+			{
+				"index" : 311,
+				"order" : 311,
+				"text" : "Red Darkred",
+				"type" : "bool",
+				"value" : true
+			},
+			"fountain_color_4" :
+			{
+				"index" : 312,
+				"order" : 312,
+				"text" : "Blue Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_5" :
+			{
+				"index" : 313,
+				"order" : 313,
+				"text" : "Yellow Green",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_6" :
+			{
+				"index" : 314,
+				"order" : 314,
+				"text" : "Cyan Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_7" :
+			{
+				"index" : 315,
+				"order" : 315,
+				"text" : "Orange Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_8" :
+			{
+				"index" : 316,
+				"order" : 316,
+				"text" : "Custom Color 1",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_9" :
+			{
+				"index" : 317,
+				"order" : 317,
+				"text" : "Custom Color 2",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountain_color_10" :
+			{
+				"index" : 318,
+				"order" : 318,
+				"text" : "Custom Color 3",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_group" :
+			{
+				"index" : 400,
+				"order" : 400,
+				"text" : "Vortex",
+				"type" : "group",
+				"value" : true
+			},
+			"vortex_enable" :
+			{
+				"index" : 400.4,
+				"order" : 400.4,
+				"text" : "Enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"vortex_frequent_separator" :
+			{
+				"index" : 400.5,
+				"order" : 400.5,
+				"text" : "<hr><h4>Frequency</h4>",
+				"type" : "text"
+			},
+			"vortex_interval" :
+			{
+				"fraction" : false,
+				"index" : 400.6,
+				"max" : 3000,
+				"min" : 50,
+				"step" : 50,
+				"order" : 400.6,
+				"text" : "Interval (ms)",
+				"type" : "slider",
+				"value" : 250
+			},
+			"vortex_duration_ms" :
+			{
+				"fraction" : false,
+				"index" : 400.7,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 400.7,
+				"text" : "Duration (ms)",
+				"type" : "slider",
+				"value" : 1000
+			},
+			"vortex_duration_s" :
+			{
+				"fraction" : false,
+				"index" : 400.8,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 400.8,
+				"text" : "Duration (s)",
+				"type" : "slider",
+				"value" : 6
+			},
+			"vortex_rest_ms" :
+			{
+				"fraction" : false,
+				"index" : 400.9,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 400.9,
+				"text" : "Rest (ms)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"vortex_rest_s" :
+			{
+				"fraction" : false,
+				"index" : 401.0,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 401.0,
+				"text" : "Rest (s)",
+				"type" : "slider",
+				"value" : 43
+			},
+			"vortex_first_wait" :
+			{
+				"fraction" : false,
+				"index" : 401.1,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 401.1,
+				"text" : "First Wait (s)",
+				"type" : "slider",
+				"value" : 40
+			},
+			"vortex_advanced_separator" :
+			{
+				"index" : 401.2,
+				"order" : 401.2,
+				"text" : "<hr><h4>Advanced</h4>",
+				"type" : "text"
+			},
+			"vortex_size" :
+			{
+				"fraction" : false,
+				"index" : 402,
+				"max" : 100,
+				"min" : 10,
+				"order" : 402,
+				"text" : "Size",
+				"type" : "slider",
+				"value" : 75
+			},
+			"vortex_colors_separator" :
+			{
+				"index" : 403,
+				"order" : 403,
+				"text" : "<hr><h4>Color Groups</h4>",
+				"type" : "text"
+			},
+			"vortex_color_0" :
+			{
+				"index" : 404,
+				"order" : 404,
+				"text" : "Pink Purple",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_1" :
+			{
+				"index" : 405,
+				"order" : 405,
+				"text" : "Blue Gray",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_2" :
+			{
+				"index" : 406,
+				"order" : 406,
+				"text" : "Pink Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_3" :
+			{
+				"index" : 407,
+				"order" : 407,
+				"text" : "Red Darkred",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_4" :
+			{
+				"index" : 408,
+				"order" : 408,
+				"text" : "Blue Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_5" :
+			{
+				"index" : 409,
+				"order" : 409,
+				"text" : "Yellow Green",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_6" :
+			{
+				"index" : 410,
+				"order" : 410,
+				"text" : "Cyan Blue",
+				"type" : "bool",
+				"value" : true
+			},
+			"vortex_color_7" :
+			{
+				"index" : 411,
+				"order" : 411,
+				"text" : "Orange Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_8" :
+			{
+				"index" : 412,
+				"order" : 412,
+				"text" : "Custom Color 1",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_9" :
+			{
+				"index" : 413,
+				"order" : 413,
+				"text" : "Custom Color 2",
+				"type" : "bool",
+				"value" : false
+			},
+			"vortex_color_10" :
+			{
+				"index" : 414,
+				"order" : 414,
+				"text" : "Custom Color 3",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountainarray_group" :
+			{
+				"index" : 500,
+				"order" : 500,
+				"text" : "FountainArray",
+				"type" : "group",
+				"value" : true
+			},
+			"fountainarray_enable" :
+			{
+				"index" : 500.4,
+				"order" : 500.4,
+				"text" : "Enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"fountainarray_frequent_separator" :
+			{
+				"index" : 500.5,
+				"order" : 500.5,
+				"text" : "<hr><h4>Frequency</h4>",
+				"type" : "text"
+			},
+			"fountainarray_interval" :
+			{
+				"fraction" : false,
+				"index" : 500.6,
+				"max" : 3000,
+				"min" : 50,
+				"step" : 50,
+				"order" : 500.6,
+				"text" : "Interval (ms)",
+				"type" : "slider",
+				"value" : 2000
+			},
+			"fountainarray_duration_ms" :
+			{
+				"fraction" : false,
+				"index" : 500.7,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 500.7,
+				"text" : "Duration (ms)",
+				"type" : "slider",
+				"value" : 1000
+			},
+			"fountainarray_duration_s" :
+			{
+				"fraction" : false,
+				"index" : 500.8,
+				"max" : 90,
+				"min" : 0,
+				"step" : 1,
+				"order" : 500.8,
+				"text" : "Duration (s)",
+				"type" : "slider",
+				"value" : 9
+			},
+			"fountainarray_rest_ms" :
+			{
+				"fraction" : false,
+				"index" : 500.9,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 500.9,
+				"text" : "Rest (ms)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"fountainarray_rest_s" :
+			{
+				"fraction" : false,
+				"index" : 501.0,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 501.0,
+				"text" : "Rest (s)",
+				"type" : "slider",
+				"value" : 40
+			},
+			"fountainarray_first_wait" :
+			{
+				"fraction" : false,
+				"index" : 501.1,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 501.1,
+				"text" : "First Wait (s)",
+				"type" : "slider",
+				"value" : 15
+			},
+			"fountainarray_advanced_separator" :
+			{
+				"index" : 501.2,
+				"order" : 501.2,
+				"text" : "<hr><h4>Advanced</h4>",
+				"type" : "text"
+			},
+			"fountainarray_speed" :
+			{
+				"fraction" : false,
+				"index" : 502,
+				"max" : 500,
+				"min" : 5,
+				"order" : 502,
+				"text" : "Speed",
+				"type" : "slider",
+				"value" : 45
+			},
+			"fountainarray_lifetime" :
+			{
+				"fraction" : false,
+				"index" : 503,
+				"max" : 5000,
+				"min" : 500,
+				"order" : 503,
+				"text" : "Lifetime (ms)",
+				"type" : "slider",
+				"value" : 5000
+			},
+			"fountainarray_speed_variance" :
+			{
+				"fraction" : true,
+				"index" : 504,
+				"max" : 1,
+				"min" : 0,
+				"order" : 504,
+				"precision" : 2,
+				"step" : 0.05,
+				"text" : "Speed Variance",
+				"type" : "slider",
+				"value" : 0.2
+			},
+			"fountainarray_array_count" :
+			{
+				"fraction" : false,
+				"index" : 505,
+				"max" : 20,
+				"min" : 2,
+				"order" : 505,
+				"text" : "Array Count",
+				"type" : "slider",
+				"value" : 16
+			},
+			"fountainarray_particle_per_array" :
+			{
+				"fraction" : false,
+				"index" : 506,
+				"max" : 20,
+				"min" : 1,
+				"order" : 506,
+				"text" : "Particles Per Array",
+				"type" : "slider",
+				"value" : 1
+			},
+			"fountainarray_angle_range" :
+			{
+				"fraction" : false,
+				"index" : 507,
+				"max" : 180,
+				"min" : 0,
+				"order" : 507,
+				"text" : "Angle Range",
+				"type" : "slider",
+				"value" : 10
+			},
+			"fountainarray_colors_separator" :
+			{
+				"index" : 508,
+				"order" : 508,
+				"text" : "<hr><h4>Color Groups</h4>",
+				"type" : "text"
+			},
+			"fountainarray_color_0" :
+			{
+				"index" : 509,
+				"order" : 509,
+				"text" : "Pink Purple",
+				"type" : "bool",
+				"value" : true
+			},
+			"fountainarray_color_1" :
+			{
+				"index" : 510,
+				"order" : 510,
+				"text" : "Blue Gray",
+				"type" : "bool",
+				"value" : true
+			},
+			"fountainarray_color_2" :
+			{
+				"index" : 511,
+				"order" : 511,
+				"text" : "Pink Blue",
+				"type" : "bool",
+				"value" : true
+			},
+			"fountainarray_color_3" :
+			{
+				"index" : 512,
+				"order" : 512,
+				"text" : "Red Darkred",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountainarray_color_4" :
+			{
+				"index" : 513,
+				"order" : 513,
+				"text" : "Blue Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountainarray_color_5" :
+			{
+				"index" : 514,
+				"order" : 514,
+				"text" : "Yellow Green",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountainarray_color_6" :
+			{
+				"index" : 515,
+				"order" : 515,
+				"text" : "Cyan Blue",
+				"type" : "bool",
+				"value" : true
+			},
+			"fountainarray_color_7" :
+			{
+				"index" : 516,
+				"order" : 516,
+				"text" : "Orange Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountainarray_color_8" :
+			{
+				"index" : 517,
+				"order" : 517,
+				"text" : "Custom Color 1",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountainarray_color_9" :
+			{
+				"index" : 518,
+				"order" : 518,
+				"text" : "Custom Color 2",
+				"type" : "bool",
+				"value" : false
+			},
+			"fountainarray_color_10" :
+			{
+				"index" : 519,
+				"order" : 519,
+				"text" : "Custom Color 3",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_group" :
+			{
+				"index" : 600,
+				"order" : 600,
+				"text" : "CrossFire",
+				"type" : "group",
+				"value" : true
+			},
+			"crossfire_enable" :
+			{
+				"index" : 600.4,
+				"order" : 600.4,
+				"text" : "Enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"crossfire_frequent_separator" :
+			{
+				"index" : 600.5,
+				"order" : 600.5,
+				"text" : "<hr><h4>Frequency</h4>",
+				"type" : "text"
+			},
+			"crossfire_interval" :
+			{
+				"fraction" : false,
+				"index" : 600.6,
+				"max" : 3000,
+				"min" : 50,
+				"step" : 50,
+				"order" : 600.6,
+				"text" : "Interval (ms)",
+				"type" : "slider",
+				"value" : 50
+			},
+			"crossfire_duration_ms" :
+			{
+				"fraction" : false,
+				"index" : 600.7,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 600.7,
+				"text" : "Duration (ms)",
+				"type" : "slider",
+				"value" :1000
+			},
+			"crossfire_duration_s" :
+			{
+				"fraction" : false,
+				"index" : 600.8,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 600.8,
+				"text" : "Duration (s)",
+				"type" : "slider",
+				"value" : 9
+			},
+			"crossfire_rest_ms" :
+			{
+				"fraction" : false,
+				"index" : 600.9,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 600.9,
+				"text" : "Rest (ms)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"crossfire_rest_s" :
+			{
+				"fraction" : false,
+				"index" : 601.0,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 601.0,
+				"text" : "Rest (s)",
+				"type" : "slider",
+				"value" : 40
+			},
+			"crossfire_first_wait" :
+			{
+				"fraction" : false,
+				"index" : 601.1,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 601.1,
+				"text" : "First Wait (s)",
+				"type" : "slider",
+				"value" : 10
+			},
+			"crossfire_advanced_separator" :
+			{
+				"index" : 601.2,
+				"order" : 601.2,
+				"text" : "<hr><h4>Advanced</h4>",
+				"type" : "text"
+			},
+			"crossfire_pos_offset" :
+			{
+				"fraction" : true,
+				"index" : 602,
+				"max" : 0.5,
+				"min" : 0,
+				"order" : 602,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Position Offset",
+				"type" : "slider",
+				"value" : 0.15
+			},
+			"crossfire_angle_direction" :
+			{
+				"fraction" : false,
+				"index" : 603,
+				"max" : 180,
+				"min" : 0,
+				"order" : 603,
+				"text" : "Angle Direction",
+				"type" : "slider",
+				"value" : 56
+			},
+			"crossfire_angle_range" :
+			{
+				"fraction" : false,
+				"index" : 604,
+				"max" : 180,
+				"min" : 0,
+				"order" : 604,
+				"text" : "Angle Range",
+				"type" : "slider",
+				"value" : 4
+			},
+			"crossfire_count" :
+			{
+				"fraction" : false,
+				"index" : 605,
+				"max" : 100,
+				"min" : 1,
+				"order" : 605,
+				"text" : "Particle Count Per Side",
+				"type" : "slider",
+				"value" : 3
+			},
+			"crossfire_speed" :
+			{
+				"fraction" : false,
+				"index" : 606,
+				"max" : 500,
+				"min" : 10,
+				"order" : 606,
+				"text" : "Speed",
+				"type" : "slider",
+				"value" : 51
+			},
+			"crossfire_speed_variance" :
+			{
+				"fraction" : true,
+				"index" : 606.5,
+				"max" : 1,
+				"min" : 0,
+				"order" : 606.5,
+				"precision" : 2,
+				"step" : 0.01,
+				"text" : "Speed Variance",
+				"type" : "slider",
+				"value" : 0.7
+			},
+			"crossfire_lifetime" :
+			{
+				"fraction" : false,
+				"index" : 607,
+				"max" : 5000,
+				"min" : 500,
+				"order" : 607,
+				"text" : "Lifetime (ms)",
+				"type" : "slider",
+				"value" : 5000
+			},
+			"crossfire_colors_separator" :
+			{
+				"index" : 608,
+				"order" : 608,
+				"text" : "<hr><h4>Color Groups</h4>",
+				"type" : "text"
+			},
+			"crossfire_color_0" :
+			{
+				"index" : 609,
+				"order" : 609,
+				"text" : "Pink Purple",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_1" :
+			{
+				"index" : 610,
+				"order" : 610,
+				"text" : "Blue Gray",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_2" :
+			{
+				"index" : 611,
+				"order" : 611,
+				"text" : "Pink Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_3" :
+			{
+				"index" : 612,
+				"order" : 612,
+				"text" : "Red Darkred",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_4" :
+			{
+				"index" : 613,
+				"order" : 613,
+				"text" : "Blue Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_5" :
+			{
+				"index" : 614,
+				"order" : 614,
+				"text" : "Yellow Green",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_6" :
+			{
+				"index" : 615,
+				"order" : 615,
+				"text" : "Cyan Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_7" :
+			{
+				"index" : 616,
+				"order" : 616,
+				"text" : "Orange Gold",
+				"type" : "bool",
+				"value" : true
+			},
+			"crossfire_color_8" :
+			{
+				"index" : 617,
+				"order" : 617,
+				"text" : "Custom Color 1",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_9" :
+			{
+				"index" : 618,
+				"order" : 618,
+				"text" : "Custom Color 2",
+				"type" : "bool",
+				"value" : false
+			},
+			"crossfire_color_10" :
+			{
+				"index" : 619,
+				"order" : 619,
+				"text" : "Custom Color 3",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_group" :
+			{
+				"index" : 700,
+				"order" : 700,
+				"text" : "GrandFinale",
+				"type" : "group",
+				"value" : true
+			},
+			"grandfinale_enable" :
+			{
+				"index" : 700.4,
+				"order" : 700.4,
+				"text" : "Enable",
+				"type" : "bool",
+				"value" : true
+			},
+			"grandfinale_frequent_separator" :
+			{
+				"index" : 700.5,
+				"order" : 700.5,
+				"text" : "<hr><h4>Frequency</h4>",
+				"type" : "text"
+			},
+			"grandfinale_interval" :
+			{
+				"fraction" : false,
+				"index" : 700.6,
+				"max" : 3000,
+				"min" : 50,
+				"step" : 50,
+				"order" : 700.6,
+				"text" : "Interval (ms)",
+				"type" : "slider",
+				"value" : 3000
+			},
+			"grandfinale_duration_ms" :
+			{
+				"fraction" : false,
+				"index" : 700.7,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 700.7,
+				"text" : "Duration (ms)",
+				"type" : "slider",
+				"value" : 1000
+			},
+			"grandfinale_duration_s" :
+			{
+				"fraction" : false,
+				"index" : 700.8,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 700.8,
+				"text" : "Duration (s)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"grandfinale_rest_ms" :
+			{
+				"fraction" : false,
+				"index" : 700.9,
+				"max" : 1000,
+				"min" : 0,
+				"step" : 50,
+				"order" : 700.9,
+				"text" : "Rest (ms)",
+				"type" : "slider",
+				"value" : 0
+			},
+			"grandfinale_rest_s" :
+			{
+				"fraction" : false,
+				"index" : 701.0,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 701.0,
+				"text" : "Rest (s)",
+				"type" : "slider",
+				"value" : 49
+			},
+			"grandfinale_first_wait" :
+			{
+				"fraction" : false,
+				"index" : 701.1,
+				"max" : 120,
+				"min" : 0,
+				"step" : 1,
+				"order" : 701.1,
+				"text" : "First Wait (s)",
+				"type" : "slider",
+				"value" : 31
+			},
+			"grandfinale_advanced_separator" :
+			{
+				"index" : 701.2,
+				"order" : 701.2,
+				"text" : "<hr><h4>Layer 1 (Warm Explosion)</h4>",
+				"type" : "text"
+			},
+			"grandfinale_count1" :
+			{
+				"fraction" : false,
+				"index" : 702,
+				"max" : 500,
+				"min" : 0,
+				"order" : 702,
+				"text" : "Particle Count 1",
+				"type" : "slider",
+				"value" : 170
+			},
+			"grandfinale_speed1" :
+			{
+				"fraction" : false,
+				"index" : 702.2,
+				"max" : 100,
+				"min" : 1,
+				"order" : 702.2,
+				"text" : "Speed 1",
+				"type" : "slider",
+				"value" : 11
+			},
+			"grandfinale_layer2_separator" :
+			{
+				"index" : 703,
+				"order" : 703,
+				"text" : "<hr><h4>Layer 2 (Blue Gradient Explosion)</h4>",
+				"type" : "text"
+			},
+			"grandfinale_count2" :
+			{
+				"fraction" : false,
+				"index" : 703.2,
+				"max" : 1000,
+				"min" : 0,
+				"order" : 703.2,
+				"text" : "Particle Count 2",
+				"type" : "slider",
+				"value" : 470
+			},
+			"grandfinale_speed2" :
+			{
+				"fraction" : false,
+				"index" : 703.4,
+				"max" : 100,
+				"min" : 0,
+				"order" : 703.4,
+				"text" : "Speed 2",
+				"type" : "slider",
+				"value" : 24
+			},
+			"grandfinale_layer3_separator" :
+			{
+				"index" : 704,
+				"order" : 704,
+				"text" : "<hr><h4>Layer 3 (Ring Array)</h4>",
+				"type" : "text"
+			},
+			"grandfinale_count3" :
+			{
+				"fraction" : false,
+				"index" : 704.2,
+				"max" : 50,
+				"min" : 1,
+				"order" : 704.2,
+				"text" : "Ring Count 3",
+				"type" : "slider",
+				"value" : 6
+			},
+			"grandfinale_speed3" :
+			{
+				"fraction" : false,
+				"index" : 704.4,
+				"max" : 500,
+				"min" : 10,
+				"order" : 704.4,
+				"text" : "Speed 3",
+				"type" : "slider",
+				"value" : 30
+			},
+			"grandfinale_ring_radius" :
+			{
+				"fraction" : false,
+				"index" : 704.5,
+				"max" : 30,
+				"min" : 1,
+				"order" : 704.5,
+				"text" : "Ring Radius",
+				"type" : "slider",
+				"value" : 12
+			},
+			"grandfinale_lifetime" :
+			{
+				"fraction" : false,
+				"index" : 704.6,
+				"max" : 10000,
+				"min" : 100,
+				"order" : 704.6,
+				"text" : "Lifetime (ms)",
+				"type" : "slider",
+				"value" : 5000
+			},
+			"grandfinale_colors_separator" :
+			{
+				"index" : 706,
+				"order" : 706,
+				"text" : "<hr><h4>Color Groups</h4>",
+				"type" : "text"
+			},
+			"grandfinale_color_0" :
+			{
+				"index" : 707,
+				"order" : 707,
+				"text" : "Pink Purple",
+				"type" : "bool",
+				"value" : true
+			},
+			"grandfinale_color_1" :
+			{
+				"index" : 708,
+				"order" : 708,
+				"text" : "Blue Gray",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_2" :
+			{
+				"index" : 709,
+				"order" : 709,
+				"text" : "Pink Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_3" :
+			{
+				"index" : 710,
+				"order" : 710,
+				"text" : "Red Darkred",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_4" :
+			{
+				"index" : 711,
+				"order" : 711,
+				"text" : "Blue Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_5" :
+			{
+				"index" : 712,
+				"order" : 712,
+				"text" : "Yellow Green",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_6" :
+			{
+				"index" : 713,
+				"order" : 713,
+				"text" : "Cyan Blue",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_7" :
+			{
+				"index" : 714,
+				"order" : 714,
+				"text" : "Orange Gold",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_8" :
+			{
+				"index" : 715,
+				"order" : 715,
+				"text" : "Custom Color 1",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_9" :
+			{
+				"index" : 716,
+				"order" : 716,
+				"text" : "Custom Color 2",
+				"type" : "bool",
+				"value" : false
+			},
+			"grandfinale_color_10" :
+			{
+				"index" : 717,
+				"order" : 717,
+				"text" : "Custom Color 3",
+				"type" : "bool",
+				"value" : false
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Abstract" ,"Pixel art","Medieval"],
+	"title" : "[ASCII] Fireworks",
+	"type" : "web",
+	"version" : 0
+}

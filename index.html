@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      @font-face {
+        font-family: 'FiraCode';
+        src: url('fonts/FiraCode-Regular.ttf') format('truetype');
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+        background: #000;
+        font-family: 'FiraCode';
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      #canvas {
+        margin: 0 auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="color.js"></script>
+    <script src="firework.js"></script>
+    <script src="firework_emitter.js"></script>
+    <script src="render.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
