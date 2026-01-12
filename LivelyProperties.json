@@ -1,0 +1,1054 @@
+{
+  "gravity": {
+    "type": "slider",
+    "text": "Gravity",
+    "max": 100,
+    "min": 0.1,
+    "tick": 1000,
+    "value": 7.5
+  },
+  "drag": {
+    "type": "slider",
+    "text": "Drag Coefficient",
+    "max": 0.5,
+    "min": 0,
+    "tick": 51,
+    "value": 0.18
+  },
+  "fps": {
+    "type": "slider",
+    "text": "FPS",
+    "max": 60,
+    "min": 20,
+    "tick": 41,
+    "value": 30
+  },
+  "font_size": {
+    "type": "slider",
+    "text": "Font Size",
+    "max": 20,
+    "min": 3,
+    "tick": 18,
+    "value": 6
+  },
+  "lifetime_offset": {
+    "type": "slider",
+    "text": "Lifetime Variance",
+    "max": 1,
+    "min": 0,
+    "tick": 101,
+    "value": 0.3
+  },
+  "button_offset": {
+    "type": "slider",
+    "text": "Bottom Offset",
+    "max": 10,
+    "min": 0,
+    "tick": 11,
+    "value": 4
+  },
+  "background_color": {
+    "type": "color",
+    "text": "Background Color",
+    "value": "#000000"
+  },
+  "classic_enable": {
+    "type": "checkbox",
+    "text": "Classic - Enable",
+    "value": true
+  },
+  "classic_interval": {
+    "type": "slider",
+    "text": "Classic - Interval (ms)",
+    "max": 3000,
+    "min": 50,
+    "tick": 60,
+    "value": 250
+  },
+  "classic_duration_ms": {
+    "type": "slider",
+    "text": "Classic - Duration (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 1000
+  },
+  "classic_duration_s": {
+    "type": "slider",
+    "text": "Classic - Duration (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 9
+  },
+  "classic_rest_ms": {
+    "type": "slider",
+    "text": "Classic - Rest (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 0
+  },
+  "classic_rest_s": {
+    "type": "slider",
+    "text": "Classic - Rest (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 40
+  },
+  "classic_first_wait": {
+    "type": "slider",
+    "text": "Classic - First Wait (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 0
+  },
+  "classic_speed": {
+    "type": "slider",
+    "text": "Classic - Explosion Speed",
+    "max": 600,
+    "min": 10,
+    "tick": 60,
+    "value": 250
+  },
+  "classic_count": {
+    "type": "slider",
+    "text": "Classic - Particle Count",
+    "max": 100,
+    "min": 10,
+    "tick": 91,
+    "value": 28
+  },
+  "classic_lifetime": {
+    "type": "slider",
+    "text": "Classic - Lifetime (ms)",
+    "max": 5000,
+    "min": 500,
+    "tick": 46,
+    "value": 3000
+  },
+  "classic_withlaunch": {
+    "type": "checkbox",
+    "text": "Classic - With Launch",
+    "value": true
+  },
+  "classic_launch_ratio": {
+    "type": "slider",
+    "text": "Classic - Launch Ratio",
+    "max": 0.9,
+    "min": 0.1,
+    "tick": 81,
+    "value": 0.85
+  },
+  "classic_speed_variance": {
+    "type": "slider",
+    "text": "Classic - Speed Variance",
+    "max": 1,
+    "min": 0,
+    "tick": 101,
+    "value": 0.85
+  },
+  "classic_color_0": {
+    "type": "checkbox",
+    "text": "Classic - Pink Purple",
+    "value": true
+  },
+  "classic_color_1": {
+    "type": "checkbox",
+    "text": "Classic - Blue Gray",
+    "value": true
+  },
+  "classic_color_2": {
+    "type": "checkbox",
+    "text": "Classic - Pink Blue",
+    "value": true
+  },
+  "classic_color_3": {
+    "type": "checkbox",
+    "text": "Classic - Red Darkred",
+    "value": true
+  },
+  "classic_color_4": {
+    "type": "checkbox",
+    "text": "Classic - Blue Gold",
+    "value": true
+  },
+  "classic_color_5": {
+    "type": "checkbox",
+    "text": "Classic - Yellow Green",
+    "value": true
+  },
+  "classic_color_6": {
+    "type": "checkbox",
+    "text": "Classic - Cyan Blue",
+    "value": false
+  },
+  "classic_color_7": {
+    "type": "checkbox",
+    "text": "Classic - Orange Gold",
+    "value": false
+  },
+  "classic_color_8": {
+    "type": "checkbox",
+    "text": "Classic - Custom Color 1",
+    "value": false
+  },
+  "classic_color_9": {
+    "type": "checkbox",
+    "text": "Classic - Custom Color 2",
+    "value": false
+  },
+  "classic_color_10": {
+    "type": "checkbox",
+    "text": "Classic - Custom Color 3",
+    "value": false
+  },
+  "fountain_enable": {
+    "type": "checkbox",
+    "text": "Fountain - Enable",
+    "value": true
+  },
+  "fountain_interval": {
+    "type": "slider",
+    "text": "Fountain - Interval (ms)",
+    "max": 3000,
+    "min": 50,
+    "tick": 60,
+    "value": 50
+  },
+  "fountain_duration_ms": {
+    "type": "slider",
+    "text": "Fountain - Duration (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 1000
+  },
+  "fountain_duration_s": {
+    "type": "slider",
+    "text": "Fountain - Duration (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 9
+  },
+  "fountain_rest_ms": {
+    "type": "slider",
+    "text": "Fountain - Rest (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 0
+  },
+  "fountain_rest_s": {
+    "type": "slider",
+    "text": "Fountain - Rest (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 40
+  },
+  "fountain_first_wait": {
+    "type": "slider",
+    "text": "Fountain - First Wait (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 20
+  },
+  "fountain_fan_angle": {
+    "type": "slider",
+    "text": "Fountain - Fan Angle",
+    "max": 90,
+    "min": 1,
+    "tick": 90,
+    "value": 10
+  },
+  "fountain_count": {
+    "type": "slider",
+    "text": "Fountain - Particle Count",
+    "max": 100,
+    "min": 1,
+    "tick": 100,
+    "value": 10
+  },
+  "fountain_speed": {
+    "type": "slider",
+    "text": "Fountain - Speed",
+    "max": 300,
+    "min": 10,
+    "tick": 30,
+    "value": 72
+  },
+  "fountain_speed_variance": {
+    "type": "slider",
+    "text": "Fountain - Speed Variance",
+    "max": 1,
+    "min": 0,
+    "tick": 101,
+    "value": 1
+  },
+  "fountain_lifetime": {
+    "type": "slider",
+    "text": "Fountain - Lifetime (ms)",
+    "max": 5000,
+    "min": 500,
+    "tick": 46,
+    "value": 5000
+  },
+  "fountain_color_0": {
+    "type": "checkbox",
+    "text": "Fountain - Pink Purple",
+    "value": false
+  },
+  "fountain_color_1": {
+    "type": "checkbox",
+    "text": "Fountain - Blue Gray",
+    "value": false
+  },
+  "fountain_color_2": {
+    "type": "checkbox",
+    "text": "Fountain - Pink Blue",
+    "value": false
+  },
+  "fountain_color_3": {
+    "type": "checkbox",
+    "text": "Fountain - Red Darkred",
+    "value": true
+  },
+  "fountain_color_4": {
+    "type": "checkbox",
+    "text": "Fountain - Blue Gold",
+    "value": false
+  },
+  "fountain_color_5": {
+    "type": "checkbox",
+    "text": "Fountain - Yellow Green",
+    "value": false
+  },
+  "fountain_color_6": {
+    "type": "checkbox",
+    "text": "Fountain - Cyan Blue",
+    "value": false
+  },
+  "fountain_color_7": {
+    "type": "checkbox",
+    "text": "Fountain - Orange Gold",
+    "value": false
+  },
+  "fountain_color_8": {
+    "type": "checkbox",
+    "text": "Fountain - Custom Color 1",
+    "value": false
+  },
+  "fountain_color_9": {
+    "type": "checkbox",
+    "text": "Fountain - Custom Color 2",
+    "value": false
+  },
+  "fountain_color_10": {
+    "type": "checkbox",
+    "text": "Fountain - Custom Color 3",
+    "value": false
+  },
+  "vortex_enable": {
+    "type": "checkbox",
+    "text": "Vortex - Enable",
+    "value": true
+  },
+  "vortex_interval": {
+    "type": "slider",
+    "text": "Vortex - Interval (ms)",
+    "max": 3000,
+    "min": 50,
+    "tick": 60,
+    "value": 250
+  },
+  "vortex_duration_ms": {
+    "type": "slider",
+    "text": "Vortex - Duration (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 1000
+  },
+  "vortex_duration_s": {
+    "type": "slider",
+    "text": "Vortex - Duration (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 6
+  },
+  "vortex_rest_ms": {
+    "type": "slider",
+    "text": "Vortex - Rest (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 0
+  },
+  "vortex_rest_s": {
+    "type": "slider",
+    "text": "Vortex - Rest (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 43
+  },
+  "vortex_first_wait": {
+    "type": "slider",
+    "text": "Vortex - First Wait (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 40
+  },
+  "vortex_size": {
+    "type": "slider",
+    "text": "Vortex - Size",
+    "max": 100,
+    "min": 10,
+    "tick": 91,
+    "value": 75
+  },
+  "vortex_color_0": {
+    "type": "checkbox",
+    "text": "Vortex - Pink Purple",
+    "value": false
+  },
+  "vortex_color_1": {
+    "type": "checkbox",
+    "text": "Vortex - Blue Gray",
+    "value": false
+  },
+  "vortex_color_2": {
+    "type": "checkbox",
+    "text": "Vortex - Pink Blue",
+    "value": false
+  },
+  "vortex_color_3": {
+    "type": "checkbox",
+    "text": "Vortex - Red Darkred",
+    "value": false
+  },
+  "vortex_color_4": {
+    "type": "checkbox",
+    "text": "Vortex - Blue Gold",
+    "value": false
+  },
+  "vortex_color_5": {
+    "type": "checkbox",
+    "text": "Vortex - Yellow Green",
+    "value": false
+  },
+  "vortex_color_6": {
+    "type": "checkbox",
+    "text": "Vortex - Cyan Blue",
+    "value": true
+  },
+  "vortex_color_7": {
+    "type": "checkbox",
+    "text": "Vortex - Orange Gold",
+    "value": false
+  },
+  "vortex_color_8": {
+    "type": "checkbox",
+    "text": "Vortex - Custom Color 1",
+    "value": false
+  },
+  "vortex_color_9": {
+    "type": "checkbox",
+    "text": "Vortex - Custom Color 2",
+    "value": false
+  },
+  "vortex_color_10": {
+    "type": "checkbox",
+    "text": "Vortex - Custom Color 3",
+    "value": false
+  },
+  "custom_color_1_1": {
+    "type": "color",
+    "text": "Custom Color Group 1 - Color 1",
+    "value": "#FF0000"
+  },
+  "custom_color_1_2": {
+    "type": "color",
+    "text": "Custom Color Group 1 - Color 2",
+    "value": "#FF5555"
+  },
+  "custom_color_1_3": {
+    "type": "color",
+    "text": "Custom Color Group 1 - Color 3",
+    "value": "#FFAAAA"
+  },
+  "custom_color_1_4": {
+    "type": "color",
+    "text": "Custom Color Group 1 - Color 4",
+    "value": "#C70000"
+  },
+  "custom_color_1_5": {
+    "type": "color",
+    "text": "Custom Color Group 1 - Color 5",
+    "value": "#960000"
+  },
+  "custom_color_1_6": {
+    "type": "color",
+    "text": "Custom Color Group 1 - Color 6",
+    "value": "#FF8080"
+  },
+  "custom_color_2_1": {
+    "type": "color",
+    "text": "Custom Color Group 2 - Color 1",
+    "value": "#00FF00"
+  },
+  "custom_color_2_2": {
+    "type": "color",
+    "text": "Custom Color Group 2 - Color 2",
+    "value": "#55FF55"
+  },
+  "custom_color_2_3": {
+    "type": "color",
+    "text": "Custom Color Group 2 - Color 3",
+    "value": "#AAFFAA"
+  },
+  "custom_color_2_4": {
+    "type": "color",
+    "text": "Custom Color Group 2 - Color 4",
+    "value": "#00C700"
+  },
+  "custom_color_2_5": {
+    "type": "color",
+    "text": "Custom Color Group 2 - Color 5",
+    "value": "#009600"
+  },
+  "custom_color_2_6": {
+    "type": "color",
+    "text": "Custom Color Group 2 - Color 6",
+    "value": "#80FF80"
+  },
+  "custom_color_3_1": {
+    "type": "color",
+    "text": "Custom Color Group 3 - Color 1",
+    "value": "#0000FF"
+  },
+  "custom_color_3_2": {
+    "type": "color",
+    "text": "Custom Color Group 3 - Color 2",
+    "value": "#5555FF"
+  },
+  "custom_color_3_3": {
+    "type": "color",
+    "text": "Custom Color Group 3 - Color 3",
+    "value": "#AAAAFF"
+  },
+  "custom_color_3_4": {
+    "type": "color",
+    "text": "Custom Color Group 3 - Color 4",
+    "value": "#0000C7"
+  },
+  "custom_color_3_5": {
+    "type": "color",
+    "text": "Custom Color Group 3 - Color 5",
+    "value": "#000096"
+  },
+  "custom_color_3_6": {
+    "type": "color",
+    "text": "Custom Color Group 3 - Color 6",
+    "value": "#8080FF"
+  },
+  "fountainarray_enable": {
+    "type": "checkbox",
+    "text": "FountainArray - Enable",
+    "value": true
+  },
+  "fountainarray_interval": {
+    "type": "slider",
+    "text": "FountainArray - Interval (ms)",
+    "max": 3000,
+    "min": 50,
+    "tick": 60,
+    "value": 2000
+  },
+  "fountainarray_duration_ms": {
+    "type": "slider",
+    "text": "FountainArray - Duration (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 1000
+  },
+  "fountainarray_duration_s": {
+    "type": "slider",
+    "text": "FountainArray - Duration (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 9
+  },
+  "fountainarray_rest_ms": {
+    "type": "slider",
+    "text": "FountainArray - Rest (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 0
+  },
+  "fountainarray_rest_s": {
+    "type": "slider",
+    "text": "FountainArray - Rest (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 40
+  },
+  "fountainarray_first_wait": {
+    "type": "slider",
+    "text": "FountainArray - First Wait (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 15
+  },
+  "fountainarray_speed": {
+    "type": "slider",
+    "text": "FountainArray - Speed",
+    "max": 500,
+    "min": 5,
+    "tick": 100,
+    "value": 45
+  },
+  "fountainarray_lifetime": {
+    "type": "slider",
+    "text": "FountainArray - Lifetime (ms)",
+    "max": 5000,
+    "min": 500,
+    "tick": 46,
+    "value": 5000
+  },
+  "fountainarray_speed_variance": {
+    "type": "slider",
+    "text": "FountainArray - Speed Variance",
+    "max": 1,
+    "min": 0,
+    "tick": 101,
+    "value": 0.2
+  },
+  "fountainarray_array_count": {
+    "type": "slider",
+    "text": "FountainArray - Array Count",
+    "max": 20,
+    "min": 2,
+    "tick": 19,
+    "value": 16
+  },
+  "fountainarray_particle_per_array": {
+    "type": "slider",
+    "text": "FountainArray - Particles Per Array",
+    "max": 20,
+    "min": 1,
+    "tick": 20,
+    "value": 1
+  },
+  "fountainarray_angle_range": {
+    "type": "slider",
+    "text": "FountainArray - Angle Range",
+    "max": 180,
+    "min": 0,
+    "tick": 181,
+    "value": 10
+  },
+  "fountainarray_color_0": {
+    "type": "checkbox",
+    "text": "FountainArray - Pink Purple",
+    "value": true
+  },
+  "fountainarray_color_1": {
+    "type": "checkbox",
+    "text": "FountainArray - Blue Gray",
+    "value": true
+  },
+  "fountainarray_color_2": {
+    "type": "checkbox",
+    "text": "FountainArray - Pink Blue",
+    "value": true
+  },
+  "fountainarray_color_3": {
+    "type": "checkbox",
+    "text": "FountainArray - Red Darkred",
+    "value": false
+  },
+  "fountainarray_color_4": {
+    "type": "checkbox",
+    "text": "FountainArray - Blue Gold",
+    "value": false
+  },
+  "fountainarray_color_5": {
+    "type": "checkbox",
+    "text": "FountainArray - Yellow Green",
+    "value": false
+  },
+  "fountainarray_color_6": {
+    "type": "checkbox",
+    "text": "FountainArray - Cyan Blue",
+    "value": true
+  },
+  "fountainarray_color_7": {
+    "type": "checkbox",
+    "text": "FountainArray - Orange Gold",
+    "value": false
+  },
+  "fountainarray_color_8": {
+    "type": "checkbox",
+    "text": "FountainArray - Custom Color 1",
+    "value": false
+  },
+  "fountainarray_color_9": {
+    "type": "checkbox",
+    "text": "FountainArray - Custom Color 2",
+    "value": false
+  },
+  "fountainarray_color_10": {
+    "type": "checkbox",
+    "text": "FountainArray - Custom Color 3",
+    "value": false
+  },
+  "crossfire_enable": {
+    "type": "checkbox",
+    "text": "CrossFire - Enable",
+    "value": true
+  },
+  "crossfire_interval": {
+    "type": "slider",
+    "text": "CrossFire - Interval (ms)",
+    "max": 3000,
+    "min": 50,
+    "tick": 60,
+    "value": 50
+  },
+  "crossfire_duration_ms": {
+    "type": "slider",
+    "text": "CrossFire - Duration (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 1000
+  },
+  "crossfire_duration_s": {
+    "type": "slider",
+    "text": "CrossFire - Duration (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 9
+  },
+  "crossfire_rest_ms": {
+    "type": "slider",
+    "text": "CrossFire - Rest (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 0
+  },
+  "crossfire_rest_s": {
+    "type": "slider",
+    "text": "CrossFire - Rest (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 40
+  },
+  "crossfire_first_wait": {
+    "type": "slider",
+    "text": "CrossFire - First Wait (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 10
+  },
+  "crossfire_pos_offset": {
+    "type": "slider",
+    "text": "CrossFire - Position Offset",
+    "max": 0.5,
+    "min": 0,
+    "tick": 51,
+    "value": 0.15
+  },
+  "crossfire_angle_direction": {
+    "type": "slider",
+    "text": "CrossFire - Angle Direction",
+    "max": 180,
+    "min": 0,
+    "tick": 181,
+    "value": 56
+  },
+  "crossfire_angle_range": {
+    "type": "slider",
+    "text": "CrossFire - Angle Range",
+    "max": 180,
+    "min": 0,
+    "tick": 181,
+    "value": 4
+  },
+  "crossfire_count": {
+    "type": "slider",
+    "text": "CrossFire - Particle Count Per Side",
+    "max": 100,
+    "min": 1,
+    "tick": 100,
+    "value": 3
+  },
+  "crossfire_speed": {
+    "type": "slider",
+    "text": "CrossFire - Speed",
+    "max": 500,
+    "min": 10,
+    "tick": 50,
+    "value": 51
+  },
+  "crossfire_speed_variance": {
+    "type": "slider",
+    "text": "CrossFire - Speed Variance",
+    "max": 1,
+    "min": 0,
+    "tick": 101,
+    "value": 0.7
+  },
+  "crossfire_lifetime": {
+    "type": "slider",
+    "text": "CrossFire - Lifetime (ms)",
+    "max": 5000,
+    "min": 500,
+    "tick": 46,
+    "value": 5000
+  },
+  "crossfire_color_0": {
+    "type": "checkbox",
+    "text": "CrossFire - Pink Purple",
+    "value": false
+  },
+  "crossfire_color_1": {
+    "type": "checkbox",
+    "text": "CrossFire - Blue Gray",
+    "value": false
+  },
+  "crossfire_color_2": {
+    "type": "checkbox",
+    "text": "CrossFire - Pink Blue",
+    "value": false
+  },
+  "crossfire_color_3": {
+    "type": "checkbox",
+    "text": "CrossFire - Red Darkred",
+    "value": false
+  },
+  "crossfire_color_4": {
+    "type": "checkbox",
+    "text": "CrossFire - Blue Gold",
+    "value": false
+  },
+  "crossfire_color_5": {
+    "type": "checkbox",
+    "text": "CrossFire - Yellow Green",
+    "value": false
+  },
+  "crossfire_color_6": {
+    "type": "checkbox",
+    "text": "CrossFire - Cyan Blue",
+    "value": false
+  },
+  "crossfire_color_7": {
+    "type": "checkbox",
+    "text": "CrossFire - Orange Gold",
+    "value": true
+  },
+  "crossfire_color_8": {
+    "type": "checkbox",
+    "text": "CrossFire - Custom Color 1",
+    "value": false
+  },
+  "crossfire_color_9": {
+    "type": "checkbox",
+    "text": "CrossFire - Custom Color 2",
+    "value": false
+  },
+  "crossfire_color_10": {
+    "type": "checkbox",
+    "text": "CrossFire - Custom Color 3",
+    "value": false
+  },
+  "grandfinale_enable": {
+    "type": "checkbox",
+    "text": "GrandFinale - Enable",
+    "value": true
+  },
+  "grandfinale_interval": {
+    "type": "slider",
+    "text": "GrandFinale - Interval (ms)",
+    "max": 3000,
+    "min": 50,
+    "tick": 60,
+    "value": 3000
+  },
+  "grandfinale_duration_ms": {
+    "type": "slider",
+    "text": "GrandFinale - Duration (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 1000
+  },
+  "grandfinale_duration_s": {
+    "type": "slider",
+    "text": "GrandFinale - Duration (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 0
+  },
+  "grandfinale_rest_ms": {
+    "type": "slider",
+    "text": "GrandFinale - Rest (ms)",
+    "max": 1000,
+    "min": 0,
+    "tick": 21,
+    "value": 0
+  },
+  "grandfinale_rest_s": {
+    "type": "slider",
+    "text": "GrandFinale - Rest (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 49
+  },
+  "grandfinale_first_wait": {
+    "type": "slider",
+    "text": "GrandFinale - First Wait (s)",
+    "max": 120,
+    "min": 0,
+    "tick": 121,
+    "value": 31
+  },
+  "grandfinale_count1": {
+    "type": "slider",
+    "text": "GrandFinale - Particle Count 1",
+    "max": 500,
+    "min": 0,
+    "tick": 51,
+    "value": 170
+  },
+  "grandfinale_speed1": {
+    "type": "slider",
+    "text": "GrandFinale - Speed 1",
+    "max": 100,
+    "min": 1,
+    "tick": 100,
+    "value": 11
+  },
+  "grandfinale_count2": {
+    "type": "slider",
+    "text": "GrandFinale - Particle Count 2",
+    "max": 1000,
+    "min": 0,
+    "tick": 101,
+    "value": 470
+  },
+  "grandfinale_speed2": {
+    "type": "slider",
+    "text": "GrandFinale - Speed 2",
+    "max": 100,
+    "min": 0,
+    "tick": 101,
+    "value": 24
+  },
+  "grandfinale_count3": {
+    "type": "slider",
+    "text": "GrandFinale - Ring Count 3",
+    "max": 50,
+    "min": 1,
+    "tick": 50,
+    "value": 6
+  },
+  "grandfinale_speed3": {
+    "type": "slider",
+    "text": "GrandFinale - Speed 3",
+    "max": 500,
+    "min": 10,
+    "tick": 50,
+    "value": 30
+  },
+  "grandfinale_ring_radius": {
+    "type": "slider",
+    "text": "GrandFinale - Ring Radius",
+    "max": 30,
+    "min": 1,
+    "tick": 30,
+    "value": 12
+  },
+  "grandfinale_lifetime": {
+    "type": "slider",
+    "text": "GrandFinale - Lifetime (ms)",
+    "max": 10000,
+    "min": 100,
+    "tick": 100,
+    "value": 5000
+  },
+  "grandfinale_color_0": {
+    "type": "checkbox",
+    "text": "GrandFinale - Pink Purple",
+    "value": true
+  },
+  "grandfinale_color_1": {
+    "type": "checkbox",
+    "text": "GrandFinale - Blue Gray",
+    "value": false
+  },
+  "grandfinale_color_2": {
+    "type": "checkbox",
+    "text": "GrandFinale - Pink Blue",
+    "value": false
+  },
+  "grandfinale_color_3": {
+    "type": "checkbox",
+    "text": "GrandFinale - Red Darkred",
+    "value": false
+  },
+  "grandfinale_color_4": {
+    "type": "checkbox",
+    "text": "GrandFinale - Blue Gold",
+    "value": false
+  },
+  "grandfinale_color_5": {
+    "type": "checkbox",
+    "text": "GrandFinale - Yellow Green",
+    "value": false
+  },
+  "grandfinale_color_6": {
+    "type": "checkbox",
+    "text": "GrandFinale - Cyan Blue",
+    "value": false
+  },
+  "grandfinale_color_7": {
+    "type": "checkbox",
+    "text": "GrandFinale - Orange Gold",
+    "value": false
+  },
+  "grandfinale_color_8": {
+    "type": "checkbox",
+    "text": "GrandFinale - Custom Color 1",
+    "value": false
+  },
+  "grandfinale_color_9": {
+    "type": "checkbox",
+    "text": "GrandFinale - Custom Color 2",
+    "value": false
+  },
+  "grandfinale_color_10": {
+    "type": "checkbox",
+    "text": "GrandFinale - Custom Color 3",
+    "value": false
+  }
+}

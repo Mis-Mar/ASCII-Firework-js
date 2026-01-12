@@ -61,12 +61,9 @@
   function render(fireworks, ctx, state) {
     if (state.fontSizeChanged) {
       ctx.font = state.font_size * 2 + "px/" + state.font_size * 4 + "px FiraCode";
-      // 使用逻辑尺寸而不是物理尺寸
-      const logicalWidth = parseInt(ctx.canvas.style.width);
-      const logicalHeight = parseInt(ctx.canvas.style.height);
-      state.width = Math.floor(logicalWidth / state.font_size);
+      state.width = Math.floor(ctx.canvas.width / state.font_size);
       // 使用 Math.floor 确保所有行都完整在屏幕内，避免"半行"问题
-      state.height = Math.floor(logicalHeight / (state.font_size * 2));
+      state.height = Math.floor(ctx.canvas.height / (state.font_size * 2));
       state.grid = Array.from({ length: state.height }, () => Array(state.width).fill(false));
       state.fontSizeChanged = false;
     }

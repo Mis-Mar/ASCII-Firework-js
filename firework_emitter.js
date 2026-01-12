@@ -46,24 +46,26 @@ class ContinuousEmitter {
       return;
     }
     
-    // 计算总时长：ms 和 s 版本相加
-    const duration = durationMs + (durationS * 1000);
-    const rest = restMs + (restS * 1000);
+    // 计算总时长（秒和毫秒参数相加）
+    const duration = durationMs + durationS * 1000;
+    const rest = restMs + restS * 1000;
     
     const timeInCycle = now - this.cycleStartTime;
     
     // 检查状态切换
     if (this.isEmitting && timeInCycle >= duration) {
-      // 切换到休息阶段
+      // 切换到休息阶段，补偿超出的时间
+      const overflow = timeInCycle - duration;
       this.isEmitting = false;
-      this.cycleStartTime = now;
+      this.cycleStartTime = now - overflow;
     } else if (!this.isEmitting && timeInCycle >= rest) {
-      // 切换回发射阶段
+      // 切换回发射阶段，补偿超出的时间
+      const overflow = timeInCycle - rest;
       this.isEmitting = true;
-      this.cycleStartTime = now;
-      this.lastEmitTime = now;
-      // 切换回发射时立即发射一个，不受 duration 限制
+      this.cycleStartTime = now - overflow;
+      // 立即发射一个，不受 duration 限制
       emitCallback();
+      this.lastEmitTime = now;
       return;
     }
     
