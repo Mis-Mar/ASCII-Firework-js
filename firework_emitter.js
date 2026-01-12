@@ -46,9 +46,9 @@ class ContinuousEmitter {
       return;
     }
     
-    // 计算总时长（秒级参数优先，如果为0则使用毫秒参数）
-    const duration = durationS > 0 ? durationS * 1000 : durationMs;
-    const rest = restS > 0 ? restS * 1000 : restMs;
+    // 计算总时长：ms 和 s 版本相加
+    const duration = durationMs + (durationS * 1000);
+    const rest = restMs + (restS * 1000);
     
     const timeInCycle = now - this.cycleStartTime;
     
