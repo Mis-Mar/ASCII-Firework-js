@@ -53,7 +53,7 @@ let classic_colors = [true, true, true, true, true, true, false, false, false, f
 let fountain_enable = true;
 let fountain_interval = 50;
 let fountain_duration_ms = 1000;
-let fountain_rest_ms = 950;
+let fountain_rest_ms = 0;
 let fountain_duration_s = 9;
 let fountain_rest_s = 40;
 let fountain_first_wait = 20;
@@ -207,8 +207,11 @@ document.body.appendChild(canvas);
 const ctx = canvas.getContext("2d");
 ctx.font = font_size * 2 + "px/" + font_size * 4 + "px FiraCode";
 
-let _width = Math.ceil(ctx.canvas.width / font_size);
-let _height = Math.ceil(ctx.canvas.height / (font_size * 2));
+// 使用 canvas 的逻辑尺寸（style.width/height）而不是物理尺寸（width/height）
+const canvasLogicalWidth = parseInt(canvas.style.width);
+const canvasLogicalHeight = parseInt(canvas.style.height);
+let _width = Math.floor(canvasLogicalWidth / font_size);
+let _height = Math.floor(canvasLogicalHeight / (font_size * 2));
 let grid = Array.from({ length: _height }, () => Array(_width).fill(false));
 
 const state = {

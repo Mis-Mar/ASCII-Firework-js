@@ -610,7 +610,7 @@
 				"order" : 300.9,
 				"text" : "Rest (ms)",
 				"type" : "slider",
-				"value" : 950
+				"value" : 0
 			},
 			"fountain_rest_s" :
 			{
@@ -1853,5 +1853,6 @@
 	"tags" : [ "Abstract" ,"Pixel art","Medieval"],
 	"title" : "[ASCII] Fireworks",
 	"type" : "web",
-	"version" : 0
+	"visibility" : "public",
+	"version" : 1.0
 }
