@@ -12,3 +12,6 @@
 
 - 配置了wallpaper engine中的配置菜单，上百个可调参数，包括但不局限于：物理参数，频率，颜色预设和自定义
 - Configure the configuration menu in Wallpaper Engine, hundreds of adjustable parameters, including but not limited to: physical parameters, frequency, color presets, and customization
+
+
+预览网站 / Preview website：https://32c86444.pinit.eth.limo/
