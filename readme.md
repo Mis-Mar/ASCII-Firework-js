@@ -1,21 +1,14 @@
-这是一个wallpaper壁纸项目，web类型
-效果是模拟命令行风格并释放字符烟花组
-通过js脚本实现
-提供了大量的可调参数用于用户自定义烟花
-包括但不限于颜色，物理参数，随机权重和频率
+# ASCII-Firework-js / ASCII 烟花 js 
 
-实现方式：
-模拟粒子，构建一个粒子和风格化的渲染层：render.js，接受粒子的寿命转化为一个字符画布对应位置字符和亮度
-每个烟花都是若干个粒子：firework.js
-控制烟花发射的是烟火发射器这个类：firework_emitter.js，烟火发射逻辑接受三个参数：interval，duration，rest，在wallpaper当中可以调整的
+## 简介 / Introduction
 
-project.json格式：
-每一个大类开头使用的index和order范围是：
-100-199
-200-299
-类推
-所以方便维护，避免牵一发动全身
-index和order还可以用小数点，便于插入新的项
+- 这是一个可以在web当中放ASCII烟花的项目
+- 效果模拟命令行风格并释放字符烟花。
 
-机制
-现在
+- This is a web-based ASCII fireworks project.
+- It simulates a command-line style and displays character-based fireworks animation.
+
+![preview](preview.gif)
+
+- 配置了wallpaper engine中的配置菜单，上百个可调参数，包括但不局限于：物理参数，频率，颜色预设和自定义
+- Configure the configuration menu in Wallpaper Engine, hundreds of adjustable parameters, including but not limited to: physical parameters, frequency, color presets, and customization
